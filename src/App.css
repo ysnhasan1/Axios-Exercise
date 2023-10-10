@@ -1,0 +1,130 @@
+/* App.css */
+
+body {
+  background-color: ghostwhite;
+}
+
+h1 {
+  font-family: "Delius Unicase", cursive;
+  font-family: "Mansalva", cursive;
+  font-family: "Mina", sans-serif;
+  letter-spacing: 3px;
+}
+
+.flex-container {
+  /* to center the div */
+  width: 80%;
+  margin-left: 10%;
+
+  display: flex;
+  justify-content: center;
+
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.flex-item {
+  width: 20%;
+  text-align: center;
+  box-shadow: 0 1px 7px black;
+  border-radius: 10px;
+  padding: 10px;
+
+  position: relative;
+  cursor: pointer;
+
+  font-family: monospace;
+  background-color: white;
+}
+
+.flex-item>img {
+  width: 45%;
+  height: 45%;
+}
+
+.flex-item>img:hover {
+  transform: scale(1.1);
+}
+
+.flex-item>h2 {
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+}
+
+#dolar-span {
+  color: navy;
+  font-weight: bold;
+}
+
+.flex-item>h3 {
+  font-weight: bold;
+  font-family: cursive;
+
+  position: absolute;
+  left: 30px;
+  bottom: 0;
+}
+
+#shopping-cart {
+  position: absolute;
+
+  right: 30px;
+  bottom: 5px;
+  font-size: 35px;
+  color: green;
+}
+
+#shopping-cart:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 1380px) {
+
+  .flex-container {
+    /* to center the div */
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  .flex-item {
+    width: 25%;
+  }
+
+  .flex-item>h2 {
+    font-size: 0.7rem;
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 900px) {
+
+  .flex-item {
+    width: 40%;
+  }
+}
+
+@media (max-width: 650px) {
+
+  .flex-item>h2 {
+    font-size: 0.6rem;
+    margin-bottom: 60px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .flex-item {
+    width: 100%;
+  }
+
+  .flex-item>h2 {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 280px) {
+
+  .flex-item>h2 {
+    margin-bottom: 70px;
+  }
+}
